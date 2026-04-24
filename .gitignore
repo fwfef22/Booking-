@@ -1,0 +1,148 @@
+## .NET ##
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet
+[Nn]uget/
+*.nupkg
+nuget.exe
+packages/
+!**/packages/build/
+
+# Project-specific
+**/*.csproj.user
+
+## Docker ##
+.dockerignore
+
+# Ignore Docker build artifacts
+**/docker-compose.*.yml
+**/docker-compose.*.yaml
+
+# Temp files created by Docker
+.docker/
+
+## IDE ##
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.settings/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Database ##
+# Entity Framework Core Migrations (do not ignore the Migrations folder, but ignore temporary files)
+**/Migrations/*.Designer.cs
+**/Migrations/*.sql
+
+# Local database files
+*.mdf
+*.ldf
+*.ndf
+
+# App-specific data
+appdata/
+
+## Logs ##
+*.log
+*.log*
+logs/
+
+## OS ##
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+## Environment ##
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+## Build outputs ##
+**/wwwroot/dist/
+**/wwwroot/bundle/
+**/wwwroot/*.js
+**/wwwroot/*.css
+!**/wwwroot/css/site.css
+!**/wwwroot/js/site.js
+
+## Test results ##
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+## Coverage reports ##
+coverage.xml
+coverage.json
+*.coverage
+*.coveragexml
+
+## Package management ##
+node_modules/
+jspm_packages/
+
+## Azure ##
+.azure/
+
+## API ##
+# Swagger/OpenAPI
+swagger.json
+swagger.yaml
+
+## Misc ##
+*_Resharper*
+*.[Cc]ache
+*.bak
+*.tmp
+*.temp
+*.orig
+*.pid
+*.seed
+*.pid.lock
+
+# Keep this - required for Entity Framework Core
+!**/Migrations/
+!**/Migrations/*.cs
+
+# Keep appsettings but ignore local overrides
+appsettings.*.json
+!appsettings.json
+!appsettings.Development.json
+!appsettings.Production.json

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservation Cancelled</title>
+  <style>
+    body { margin: 0; padding: 0; background: #f4f4f4; font-family: Arial, sans-serif; }
+    .wrapper { max-width: 600px; margin: 40px auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .header { background: #dc2626; padding: 32px 40px; text-align: center; }
+    .header h1 { margin: 0; color: #ffffff; font-size: 24px; letter-spacing: 0.5px; }
+    .body { padding: 32px 40px; color: #333333; }
+    .body p { font-size: 15px; line-height: 1.6; margin: 0 0 16px; }
+    .details { background: #fff0f0; border-radius: 6px; padding: 20px 24px; margin: 24px 0; }
+    .details table { width: 100%; border-collapse: collapse; }
+    .details td { padding: 8px 0; font-size: 14px; color: #444; }
+    .details td:first-child { font-weight: bold; color: #dc2626; width: 140px; }
+    .footer { background: #f9f9f9; padding: 20px 40px; text-align: center; font-size: 12px; color: #999; border-top: 1px solid #eeeeee; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>❌ Reservation Cancelled</h1>
+    </div>
+    <div class="body">
+      <p>Hi there,</p>
+      <p>Your reservation has been cancelled. Here are the details of the cancelled booking:</p>
+      <div class="details">
+        <table>
+          <tr><td>Reservation ID</td><td>#{{ReservationId}}</td></tr>
+        </table>
+      </div>
+      <p>If you believe this was a mistake or need further assistance, please contact our support team.</p>
+      <p>We hope to see you again soon.</p>
+    </div>
+    <div class="footer">
+      ZUT Booking &mdash; This is an automated message, please do not reply.
+    </div>
+  </div>
+</body>
+</html>

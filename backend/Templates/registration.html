@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to ZUT Booking</title>
+  <style>
+    body { margin: 0; padding: 0; background: #f4f4f4; font-family: Arial, sans-serif; }
+    .wrapper { max-width: 600px; margin: 40px auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .header { background: #2563eb; padding: 32px 40px; text-align: center; }
+    .header h1 { margin: 0; color: #ffffff; font-size: 24px; letter-spacing: 0.5px; }
+    .body { padding: 32px 40px; color: #333333; }
+    .body p { font-size: 15px; line-height: 1.6; margin: 0 0 16px; }
+    .highlight { background: #f0f4ff; border-left: 4px solid #2563eb; padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 24px 0; font-size: 15px; color: #1e40af; }
+    .footer { background: #f9f9f9; padding: 20px 40px; text-align: center; font-size: 12px; color: #999; border-top: 1px solid #eeeeee; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>👋 Welcome to ZUT Booking!</h1>
+    </div>
+    <div class="body">
+      <p>Hi <strong>{{UserName}}</strong>,</p>
+      <p>Your account has been successfully created. We're happy to have you on board!</p>
+      <div class="highlight">
+        You can now browse listings, make reservations, and manage your bookings all in one place.
+      </div>
+      <p>If you did not create this account, please ignore this email or contact our support team.</p>
+      <p>Welcome aboard! 🎉</p>
+    </div>
+    <div class="footer">
+      ZUT Booking &mdash; This is an automated message, please do not reply.
+    </div>
+  </div>
+</body>
+</html>

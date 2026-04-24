@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Refund Processed</title>
+  <style>
+    body { margin: 0; padding: 0; background: #f4f4f4; font-family: Arial, sans-serif; }
+    .wrapper { max-width: 600px; margin: 40px auto; background: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .header { background: #7c3aed; padding: 32px 40px; text-align: center; }
+    .header h1 { margin: 0; color: #ffffff; font-size: 24px; letter-spacing: 0.5px; }
+    .body { padding: 32px 40px; color: #333333; }
+    .body p { font-size: 15px; line-height: 1.6; margin: 0 0 16px; }
+    .details { background: #faf5ff; border-radius: 6px; padding: 20px 24px; margin: 24px 0; }
+    .details table { width: 100%; border-collapse: collapse; }
+    .details td { padding: 8px 0; font-size: 14px; color: #444; }
+    .details td:first-child { font-weight: bold; color: #7c3aed; width: 140px; }
+    .total-row td { font-size: 16px !important; border-top: 1px solid #ede9fe; padding-top: 14px !important; }
+    .note { background: #f0f4ff; border-left: 4px solid #7c3aed; padding: 14px 18px; border-radius: 0 6px 6px 0; font-size: 14px; color: #4c1d95; margin-top: 16px; }
+    .footer { background: #f9f9f9; padding: 20px 40px; text-align: center; font-size: 12px; color: #999; border-top: 1px solid #eeeeee; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>💜 Refund Processed</h1>
+    </div>
+    <div class="body">
+      <p>Hi there,</p>
+      <p>Your refund has been successfully processed. Here are the details:</p>
+      <div class="details">
+        <table>
+          <tr><td>Payment ID</td><td>#{{PaymentId}}</td></tr>
+          <tr class="total-row"><td>Refund Amount</td><td><strong>{{Amount}}</strong></td></tr>
+        </table>
+      </div>
+      <div class="note">
+        💡 Refunds typically take 3–5 business days to appear on your statement depending on your bank.
+      </div>
+      <p>If you have any questions about this refund, please don't hesitate to contact our support team.</p>
+    </div>
+    <div class="footer">
+      ZUT Booking &mdash; This is an automated message, please do not reply.
+    </div>
+  </div>
+</body>
+</html>
